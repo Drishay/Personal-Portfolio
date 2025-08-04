@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* styling header */
+
+.Quotes {
+  background-color: #f91b1b;
+  height: 5rem;
+}
+
+
+
+/* main layout */
+main {
+  display: flex;
+}
+
+/* side panel */
+.Side-Pannel {
+  background-color: #2582c9;
+  height: auto; /* adjust as needed */
+  width: 5%;
+}
+
+/* main content */
+.Main-Content {
+  width: 95%;
+}
+
+/* navigation bar inside main content */
+.Navigation-bar {
+  background-color: #40f91b;
+  padding: 1rem;
+}
+
+/* introduction inside main content */
+.Introduction {
+  background-color: #bfcb16;
+  padding: 1rem;
+}
+
+
+/* footer */
+.Footer-Quick-Links {
+  background-color: #611bf9;
+  padding: 1rem;
+}
