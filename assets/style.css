@@ -3,10 +3,28 @@
   margin: 0;
 }
 
-/* styling header */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F9FAFB;
+  color: #a92828;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* or min-height: 100%; for older browsers */
+  /*  height: 100%;  can also be used, but min-height is generally preferred */
+}
 
+/* styling header */
+#Header{
+  height: 5%;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  
+}
+
+/* Quotes inside header */
 .Quotes {
-  background-color: #f91b1b;
+  background-color: #f3dd6f;
   height: 5rem;
 }
 
@@ -15,35 +33,65 @@
 /* main layout */
 main {
   display: flex;
+  height: 85%;
+  flex: 1 0 auto; /* Allows main to grow and push the footer */
 }
 
-/* side panel */
-.Side-Pannel {
-  background-color: #2582c9;
+/* social link panel inside main*/
+.Social-Link-Pannel {
+  background-color: #bd7878;
   height: auto; /* adjust as needed */
   width: 5%;
 }
 
-/* main content */
+/* main content inside main */
 .Main-Content {
-  width: 95%;
+  width: 90%;
+  background-color: #f3dd6f;
 }
 
 /* navigation bar inside main content */
 .Navigation-bar {
-  background-color: #40f91b;
+  background-color: #ffffff;
   padding: 1rem;
+  font-size: 1.2rem;
+  height: auto;
 }
 
 /* introduction inside main content */
 .Introduction {
+  padding: 1rem;
+  margin: 1rem;
   background-color: #bfcb16;
   padding: 1rem;
 }
 
+/* project pannel inside main*/
+.Project-Pannel{
+  background-color: #f91b1b;
+  height: auto; /* adjust as needed */
+  width: 5%;
+}
+
 
 /* footer */
+#Footer{
+  height: 10%;
+  width: 100%;     /* Makes it span the full width */
+  background-color: rgb(109, 41, 41);
+  display: flex;
+  /* position: sticky; */
+  bottom: 0;
+}
+
 .Footer-Quick-Links {
   background-color: #611bf9;
-  padding: 1rem;
+  padding: 5px;
+  margin: 30px;
+  width: 100%;
+  height: 60%;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  position: relative; /* Ensures it stays at the bottom of the footer */
 }
