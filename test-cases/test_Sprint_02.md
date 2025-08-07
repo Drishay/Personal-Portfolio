@@ -13,7 +13,8 @@
 
 ## 🧪 Test Steps
 
-| Step | Action|--------------------------------------------------------------------------------|
+| Step | Action                                                                                 |
+|------|----------------------------------------------------------------------------------------|
 | 1    | Open `index.html` in a browser                                                         |
 | 2    | Verify that the top navigation bar includes `Home`, `About`, `Contact`, and `Projects` |
 | 3    | Click on the toggle button to open the side panel (fast project switcher)              |
