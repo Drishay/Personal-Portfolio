@@ -6,29 +6,28 @@
 }
 
 html {
-  font-size: 16px; /* Base for rem scaling */
+  font-size: 16px;
 }
 
 body {
   font-family: Arial, sans-serif;
   background-color: #f8fafc;
-  color: #0f172a; /* primary text color */
-  display: flex;
-  flex-direction: column;
+  color: #0f172a;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* header, main, footer */
   min-height: 100vh;
-  overflow-x: auto;
-  overflow-y: auto; /* Prevent vertical scroll */
 }
 
-/* ===== Header ===== */
+/* ===== Header (2 rows) ===== */
 #Header {
+  display: grid;
+  grid-template-rows: auto auto; /* Quotes + Navigation */
   width: 100%;
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
-/* Quotes Bar */
 .Quotes {
   background-color: #474347;
   min-height: 4vh;
@@ -41,7 +40,6 @@ body {
   text-align: center;
 }
 
-/* Navigation Bar */
 .Navigation-bar {
   background-color: #1e3a8a;
   padding: 1rem;
@@ -50,7 +48,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  align-items: center;
+  text-align: right;
 }
 
 .Navigation-Links a {
@@ -62,55 +60,48 @@ body {
 }
 
 .Navigation-Links a:hover {
-  background-color: #3b82f6; /* lighter blue on hover */
+  background-color: #3b82f6;
   color: #0284c7;
   border-radius: 4px;
 }
 
-/* ===== Main Layout ===== */
+/* ===== Main Layout (3 columns) ===== */
 main {
-  display: flex;
-  flex: 1;
-  width: 100%;
-  overflow: auto;
+  display: grid;
+  grid-template-columns: 5.5rem 1fr 5.5rem; /* Social - Content - Projects */
+  overflow: hidden;
 }
 
 /* Social Links Panel */
 .Social-Link-Panel {
   background-color: #334155;
-  color: #f1f5f9; /* light text for contrast */
-  width: 5.5rem;
-  min-width: 3rem;
+  color: #f1f5f9;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding: 1rem 0;
   align-items: center;
-  flex-shrink: 0;
-  position: sticky;
-  top: 0;
-  height: calc(100vh - 8rem); /* Adjust for header/footer space */
-  text-align: center;
+  padding: 1rem 0;
   gap: 1rem;
+  text-align: center;
 }
 
-/* Main Content */
+/* Main Content (scrollable) */
 .Main-Content {
-  flex: 1;
   background-color: #a4e0f3;
   overflow-y: auto;
   padding: 2rem 1rem;
 }
 
-/* Introduction Section */
-.Intro-Section {
-  background-color: #f1f5f9; /* Card background */
-  color: #0f172a; /* Dark slate text */
+.Content-Section {
+  background-color: #f1f5f9;
+  color: #0f172a;
   margin: 1rem 0;
   padding: 1rem;
   border-radius: 5px;
   display: flex;
+  gap: 1rem;
+  opacity: 0.8;
 }
+
 .Intro-Text {
   flex: 1;
   font-size: 1.2rem;
@@ -118,76 +109,60 @@ main {
   width: 70%;
   gap: 1rem;
 }
+
 .Intro-Image {
   width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-image: 50%;
 }
 
-
-
-
-/* Project Panel (right sidebar) */
+/* Project Panel */
 .Project-Panel {
   background-color: #334155;
   color: #ffffff;
-  width: 5.5rem;
-  min-width: 3rem;
-  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  height: calc(100vh - 8rem);
-  text-align: center;
   gap: 1rem;
+  text-align: center;
 }
 
-/* ===== Footer ===== */
+/* ===== Footer (2 rows) ===== */
 #Footer {
-  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto;
   background-color: #f1f5f9;
   color: #0f172a;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  border-radius: 12px 12px 0 0;
-  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05); /* soft top shadow */
 }
 
 .Footer-Quick-Links {
   background-color: #e2e8f0;
-  color: #0f172a; /* dark slate for text */
   font-size: 1rem;
   text-align: center;
   padding: 0.75rem;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 0.5rem;
-  height: 90%;
 }
-.Footer-Copyright{
+
+.Footer-Copyright {
   text-align: center;
   padding: 0.75rem;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 0.5rem;
-  height: 10%;
 }
 
 /* ===== Responsive Adjustments ===== */
 @media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr; /* stack columns */
+  }
+
   .Social-Link-Panel,
   .Project-Panel {
     display: none;
