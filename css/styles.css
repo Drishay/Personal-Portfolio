@@ -8,10 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Hero image transition safety */
-#heroImage {
-  transition: opacity 1s ease-in-out;
-}
+
 
 /* Optional: card hover (very subtle, recruiter-safe) */
 .card-hover {
