@@ -85,116 +85,204 @@
   <header class="max-w-6xl mx-auto px-6 py-16">
     <h1 class="text-3xl font-semibold mb-4">Projects</h1>
     <p class="text-gray-400 max-w-2xl">
-      A collection of projects I've built while learning software development,
-      system design, and problem-solving through hands-on practice.
+      A categorized collection of projects showcasing my learning, academic work,
+      game development, hackathons, and personal explorations.
     </p>
   </header>
+  <!-- FILTER BAR -->
+  <div class="max-w-6xl mx-auto px-6 mb-10">
+    <div class="flex flex-wrap gap-3 text-sm">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="top">Top</button>
+      <button class="filter-btn" data-filter="game">Games</button>
+      <button class="filter-btn" data-filter="academic">Academic</button>
+      <button class="filter-btn" data-filter="learning">Learning</button>
+      <button class="filter-btn" data-filter="hackathon">Hackathon</button>
+      <button class="filter-btn" data-filter="personal">Personal</button>
+    </div>
+  </div>
 
-  <!-- PROJECTS GRID -->
-  <section class="max-w-6xl mx-auto px-6 pb-20">
+  <!-- Top Projects -->
+  <section class="max-w-6xl mx-auto px-6 pt-8 pb-12">
+    <h2 class="text-2xl font-semibold mb-2">Top Project</h2>
+    <p class="text-gray-400 text-sm mb-10">
+      Projects focused on gameplay logic, systems, and iterative development.
+    </p>
+
     <div class="grid md:grid-cols-3 gap-8">
-
-      <!-- PROJECT CARD -->
-      <div class="bg-surface p-6 rounded-xl border border-white/10 card-hover">
-        <h3 class="font-medium mb-2">Tic-Tac-Toe</h3>
-        <p class="text-gray-400 text-sm mb-4">
-          A browser-based game implementing core game logic and UI interactions.
+      <div class="bg-surface p-6 rounded-xl border border-white/10 card-hover" data-category="top">
+        <h3 class="font-medium mb-2">Portfolio Website</h3>
+        <p class="text-gray-400 text-sm mb-3">
+          A responsive, structured portfolio built using HTML, Tailwind CSS, and JavaScript.
         </p>
-        <p class="text-xs text-gray-500 mb-4">
-          HTML • CSS • JavaScript
-        </p>
-        <div class="flex space-x-4 text-sm">
-          <a href="#" class="text-accent hover:underline">Live Demo</a>
-          <a href="https://github.com/Drishay/Tic-Tac-Toe" target="_blank" class="hover:text-accent">
-            GitHub
-          </a>
-        </div>
+        <p class="text-xs text-gray-500 mb-4">HTML • Tailwind CSS • JavaScript</p>
+        <a href="https://github.com/Drishay/Portfolio" target="_blank" class="hover:text-accent">GitHub</a>
+        <a href="https://portfolio-seven-green-57.vercel.app/" target="_blank" class="hover:text-accent ml-4">Live
+          Demo</a>
       </div>
+    </div>
+  </section>
 
-      <!-- PROJECT CARD -->
-      <div class="bg-surface p-6 rounded-xl border border-white/10 card-hover">
+  <!-- GAME DEVELOPMENT -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-semibold mb-2">Game Development</h2>
+    <p class="text-gray-400 text-sm mb-10">
+      Projects focused on gameplay logic, systems, and iterative development.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-surface p-6 rounded-xl border border-white/10 card-hover" data-category="game">
+
         <h3 class="font-medium mb-2">Cube Runner</h3>
-        <p class="text-gray-400 text-sm mb-4">
-          A beginner-friendly 3D runner game focused on obstacle logic and gameplay flow.
+        <p class="text-gray-400 text-sm mb-3">
+          A 3D runner game focused on obstacle handling and player flow.
         </p>
-        <p class="text-xs text-gray-500 mb-4">
-          Unity • C#
-        </p>
-        <div class="flex space-x-4 text-sm">
-          <a href="https://github.com/Drishay/Unity-Build/tree/main/Cube_Runner_Build" target="_blank"
-            class="hover:text-accent">
-            GitHub
-          </a>
-        </div>
+        <p class="text-xs text-gray-500 mb-4">Unity • C#</p>
+        <a href="https://github.com/Drishay/Unity-Build/tree/main/Cube_Runner_Build" target="_blank"
+          class="hover:text-accent">GitHub</a>
       </div>
 
-      <!-- PROJECT CARD -->
-      <div class="bg-surface p-6 rounded-xl border border-white/10 card-hover">
+      <div class="bg-surface p-6 rounded-xl border border-white/10 card-hover" data-category="game">
         <h3 class="font-medium mb-2">Plane Shooter</h3>
-        <p class="text-gray-400 text-sm mb-4">
-          A 2D mobile game featuring multiple levels, bosses, and retro-style gameplay.
+        <p class="text-gray-400 text-sm mb-3">
+          A 2D mobile game with levels, bosses, and retro-style gameplay.
         </p>
-        <p class="text-xs text-gray-500 mb-4">
-          Unity • C#
-        </p>
-        <div class="flex space-x-4 text-sm">
-          <a href="https://github.com/Drishay/Unity-Build/tree/main/Plane_Shooter" target="_blank"
-            class="hover:text-accent">
-            GitHub
-          </a>
-        </div>
+        <p class="text-xs text-gray-500 mb-4">Unity • C#</p>
+        <a href="https://github.com/Drishay/Unity-Build/tree/main/Plane_Shooter" target="_blank"
+          class="hover:text-accent">GitHub</a>
       </div>
+    </div>
+  </section>
 
-      <!-- PROJECT CARD -->
-      <div class="bg-surface p-6 rounded-xl border border-white/10 card-hover">
+  <!-- ACADEMIC PROJECTS -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-semibold mb-2">Academic Projects</h2>
+    <p class="text-gray-400 text-sm mb-10">
+      College and school projects built as part of coursework and workshops.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-surface p-6 rounded-xl border border-white/10 card-hover" data-category="academic">
         <h3 class="font-medium mb-2">TradeSense</h3>
-        <p class="text-gray-400 text-sm mb-4">
-          A Python-based analytical tool that evaluates trade conditions using strategy logic.
+        <p class="text-gray-400 text-sm mb-3">
+          Python-based analytical tool for evaluating trade setups using strategy logic.
         </p>
-        <p class="text-xs text-gray-500 mb-4">
-          Python
-        </p>
-        <div class="flex space-x-4 text-sm">
-          <a href="https://github.com/Drishay/CollegeProjects/tree/main/Mini-Project" target="_blank"
-            class="hover:text-accent">
-            GitHub
-          </a>
-        </div>
+        <p class="text-xs text-gray-500 mb-4">Python</p>
+        <a href="https://github.com/Drishay/CollegeProjects/tree/main/Mini-Project" target="_blank"
+          class="hover:text-accent">GitHub</a>
       </div>
 
-      <!-- PROJECT CARD -->
-      <div class="bg-surface p-6 rounded-xl border border-white/10 card-hover">
+      <div class="bg-surface p-6 rounded-xl border border-white/10 card-hover" data-category="academic">
         <h3 class="font-medium mb-2">Bank Management System</h3>
-        <p class="text-gray-400 text-sm mb-4">
-          A Java-based academic project simulating core banking operations with SQL integration.
+        <p class="text-gray-400 text-sm mb-3">
+          Java-based system simulating core banking operations with SQL integration.
         </p>
-        <p class="text-xs text-gray-500 mb-4">
-          Java • MySQL • JDBC
-        </p>
-        <div class="flex space-x-4 text-sm">
-          <a href="https://github.com/Drishay/CollegeProjects/tree/main/Java-Workshop-Project" target="_blank"
-            class="hover:text-accent">
-            GitHub
-          </a>
-        </div>
+        <p class="text-xs text-gray-500 mb-4">Java • MySQL • JDBC</p>
+        <a href="https://github.com/Drishay/CollegeProjects/tree/main/Java-Workshop-Project" target="_blank"
+          class="hover:text-accent">GitHub</a>
       </div>
 
     </div>
   </section>
 
-  <!-- FOOTER -->
-    <footer class="border-t border-white/10 py-10">
-        <div
-            class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-            <p>© 2026 Drishay Chauhan</p>
-            <div class="space-x-6 mt-4 md:mt-0">
-                <a href="https://github.com/Drishay" class="hover:text-accent">GitHub</a>
-                <a href="https://www.linkedin.com/in/drishaychauhan" class="hover:text-accent">LinkedIn</a>
-                <a href="mailto:drishaychauhan3357@gmail.com" class="hover:text-accent">Email</a>
-            </div>
-        </div>
-    </footer>
+  <!-- LEARNING PROJECTS -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-semibold mb-2">Learning Projects</h2>
+    <p class="text-gray-400 text-sm mb-10">
+      Small projects built to understand frontend logic and interactivity.
+    </p>
 
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="bg-surface p-6 rounded-xl border border-white/10 card-hover" data-category="learning">
+        <h3 class="font-medium mb-2">Tic-Tac-Toe</h3>
+        <p class="text-gray-400 text-sm mb-3">
+          JavaScript-based game focusing on logic and state management.
+        </p>
+        <p class="text-xs text-gray-500 mb-4">HTML • CSS • JavaScript</p>
+        <a href="https://github.com/Drishay/Tic-Tac-Toe" target="_blank" class="hover:text-accent">GitHub</a>
+        <a href="https://drishay.github.io/Tic-Tac-Toe/" target="_blank" class="hover:text-accent ml-4">Live Demo</a>
+      </div>
+
+      <div class="bg-surface p-6 rounded-xl border border-white/10 card-hover" data-category="learning">
+        <h3 class="font-medium mb-2">Rock Paper Scissors</h3>
+        <p class="text-gray-400 text-sm mb-3">
+          JavaScript-based game focusing on logic and state management.
+        </p>
+        <p class="text-xs text-gray-500 mb-4">HTML • CSS • JavaScript</p>
+        <a href="https://github.com/Drishay/Rock-Paper-Scissors" target="_blank" class="hover:text-accent">GitHub</a>
+        <a href="https://rock-paper-scissors-seven-silk.vercel.app/" target="_blank" class="hover:text-accent ml-4">Live Demo</a>
+      </div>
+
+      <div class="bg-surface p-6 rounded-xl border border-white/10 card-hover" data-category="learning">
+        <h3 class="font-medium mb-2">Movie List App</h3>
+        <p class="text-gray-400 text-sm mb-3">
+          A simple single-page application built with React that lets you search for movies, browse popular titles, and
+          manage your personal list of favorites.
+        </p>
+        <p class="text-xs text-gray-500 mb-4">HTML • CSS • JavaScript</p>
+        <a href="https://github.com/Drishay/Movie-List-App" target="_blank" class="hover:text-accent">GitHub</a>
+        <a href="https://movie-list-app-ten-smoky.vercel.app/" target="_blank" class="hover:text-accent ml-4">Live Demo</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HACKATHON PROJECTS -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-semibold mb-2">Hackathon Projects</h2>
+    <p class="text-gray-400 text-sm mb-10">
+      Projects built under time constraints with team collaboration.
+    </p>
+
+    <div class="bg-surface p-6 rounded-xl border border-white/10 card-hover" data-category="hackathon">
+      <h3 class="font-medium mb-2">Movie List App</h3>
+      <p class="text-gray-400 text-sm mb-3">
+        Build Mental Health Management System (MindWell) to provide support and resources for mental well-being of
+        students.
+      </p>
+      <p class="text-xs text-gray-500 mb-4">Team Project • Problem Solving</p>
+      <a href="https://github.com/Drishay/Hackathon-MindWell-Website" target="_blank" class="hover:text-accent">GitHub</a>
+      <a href="https://hackathon-mind-well-website.vercel.app/" target="_blank" class="hover:text-accent ml-4">Live Demo</a>
+    </div>
+  </section>
+
+  <!-- PERSONAL PROJECTS -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-semibold mb-2">Personal Projects</h2>
+    <p class="text-gray-400 text-sm mb-10">
+      Special projects reflecting personal interest and deeper exploration.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-surface p-6 rounded-xl border border-white/10 card-hover" data-category="personal">
+        <h3 class="font-medium mb-2">Portfolio Website</h3>
+        <p class="text-gray-400 text-sm mb-3">
+          A responsive, structured portfolio built using HTML, Tailwind CSS, and JavaScript.
+        </p>
+        <p class="text-xs text-gray-500 mb-4">HTML • Tailwind CSS • JavaScript</p>
+        <a href="https://github.com/Drishay/Portfolio" target="_blank" class="hover:text-accent">GitHub</a>
+        <a href="https://portfolio-seven-green-57.vercel.app/" target="_blank" class="hover:text-accent ml-4">Live
+          Demo</a>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 py-10">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+      <p>© 2026 Drishay Chauhan</p>
+      <div class="space-x-6 mt-4 md:mt-0">
+        <a href="https://github.com/Drishay" class="hover:text-accent">GitHub</a>
+        <a href="https://www.linkedin.com/in/drishaychauhan" class="hover:text-accent">LinkedIn</a>
+        <a href="mailto:drishaychauhan3357@gmail.com" class="hover:text-accent">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/projects.js"></script>
 </body>
 
 </html>
