@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Drishay Chauhan</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: "#0f172a",
+                        surface: "#111827",
+                        accent: "#38bdf8"
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-bg text-gray-200">
+
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-50 bg-bg/90 backdrop-blur border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+            <!-- LOGO -->
+            <a href="index.html" class="font-semibold text-lg">Drishay</a>
+
+            <!-- DESKTOP MENU -->
+            <div class="hidden md:flex items-center space-x-6 text-sm">
+                <a href="index.html" class="hover:text-accent">Home</a>
+                <a href="skills.html" class="hover:text-accent">Skills</a>
+                <a href="journey.html" class="hover:text-accent">Journey</a>
+                <a href="projects.html" class="hover:text-accent">Projects</a>
+                <a href="blog.html" class="hover:text-accent">Blog</a>
+
+                <!-- Resume (always visible) -->
+                <a href="assets/resume/Drishay_Chauhan_Resume.pdf" target="_blank"
+                    class="text-sm px-4 py-2 rounded-md border border-white/20 hover:border-accent hover:text-accent transition">
+                    Resume
+                </a>
+            </div>
+
+            <!-- MOBILE MENU BUTTON -->
+            <button id="menuBtn" class="md:hidden focus:outline-none" aria-label="Toggle menu">
+                <svg class="w-6 h-6 text-gray-200" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- MOBILE MENU -->
+        <div id="mobileMenu" class="hidden md:hidden border-t border-white/10 bg-bg">
+            <div class="px-6 py-4 space-y-4 text-sm">
+                <a href="index.html" class="block hover:text-accent">Home</a>
+                <a href="skills.html" class="block hover:text-accent">Skills</a>
+                <a href="journey.html" class="block hover:text-accent">Journey</a>
+                <a href="projects.html" class="block hover:text-accent">Projects</a>
+                <a href="blog.html" class="block hover:text-accent">Blog</a>
+
+                <a href="assets/resume/Drishay_Chauhan_Resume.pdf" target="_blank"
+                    class="inline-block text-sm px-4 py-2 rounded-md border border-white/20 hover:border-accent hover:text-accent transition">
+                    Resume
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HEADER -->
+    <header class="max-w-6xl mx-auto px-6 py-16">
+        <h1 class="text-3xl font-semibold mb-4">Blog</h1>
+        <p class="text-gray-400 max-w-2xl">
+            Notes, learnings, and reflections from my journey in software development,
+            problem-solving, and building projects.
+        </p>
+    </header>
+
+    <!-- BLOG LIST -->
+    <section class="max-w-6xl mx-auto px-6 pb-20">
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <!-- Blog Card -->
+            <!-- <div class="bg-surface p-6 rounded-xl border border-white/10 card-hover">
+                <h3 class="font-medium mb-2">How I Built My First JavaScript Game</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                    Breaking down logic, mistakes, and lessons learned while building Tic-Tac-Toe.
+                </p>
+                <p class="text-xs text-gray-500 mb-3">JavaScript • Learning</p>
+                <a href="#" class="text-accent text-sm hover:underline">
+                    Read article →
+                </a>
+            </div> -->
+
+            <!-- Placeholder -->
+            <div class="bg-surface p-6 rounded-xl border border-white/10">
+                <p class="text-gray-500 text-sm italic">
+                    Articles coming soon.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-white/10 py-10">
+        <div
+            class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+            <p>© 2026 Drishay Chauhan</p>
+            <div class="space-x-6 mt-4 md:mt-0">
+                <a href="https://github.com/Drishay" class="hover:text-accent">GitHub</a>
+                <a href="https://www.linkedin.com/in/drishaychauhan" class="hover:text-accent">LinkedIn</a>
+                <a href="mailto:drishaychauhan3357@gmail.com" class="hover:text-accent">Email</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
